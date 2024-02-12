@@ -28,7 +28,7 @@ class Philosopher extends Thread {
   }
   public void run() {
     try {
-      // All philosophers are right handed
+      // case where all philosophers are right handed
       if (hand == 0){
         while (thinkCount < cycles) {
           ++thinkCount;
@@ -36,16 +36,16 @@ class Philosopher extends Thread {
             System.out.println("Philosopher " + id + " has thought " + thinkCount + " times");
           int tt = random.nextInt(thinkingTime);
           System.out.println("Philosopher " + id + " thinks for " + tt + " units");
-          Thread.sleep(tt);     // Think for a while
+          Thread.sleep(tt);     //  Time required for thinking
           System.out.println("Philosopher " + id + " wants chopstick right");
-          synchronized(right) {                    // Grab right chopstick 
+          synchronized(right) {                    // Philosopher grabs the right chopstick 
             System.out.println("Philosopher " + id + " has chopstick right");
             System.out.println("Philosopher " + id + " wants chopstick left");
             synchronized(left) {
-              System.out.println("Philosopher " + id + " has chopstick left");                 // Grab left chopstick
+              System.out.println("Philosopher " + id + " has chopstick left");                 // Philosopher grabs the left chopstick 
               int et = random.nextInt((eatingTime));
               System.out.println("Philosopher " + id + " eats for " + et + " units");
-              Thread.sleep(et); // Eat for a while
+              Thread.sleep(et); // Time required for eating
             }
             System.out.println("Philosopher " + id + " releases chopstick left");
           }
@@ -53,9 +53,9 @@ class Philosopher extends Thread {
         }
       }
 
-      // Even philosophers are right handed and odd philosophers are left handed
+      // Even numbered philosophers are right handed and odd numbered philosophers are left handed
       else{
-        // right Handed Philosopher
+        // for a right Handed Philosopher
         if (id % 2 == 0){
           while (thinkCount < cycles) {
             ++thinkCount;
@@ -63,23 +63,23 @@ class Philosopher extends Thread {
               System.out.println("Philosopher " + id + " has thought " + thinkCount + " times");
             int tt = random.nextInt(thinkingTime);
             System.out.println("Philosopher " + id + " thinks for " + tt + " units");
-            Thread.sleep(tt);     // Think for a while
+            Thread.sleep(tt);     // Time required for thinking
             System.out.println("Philosopher " + id + " wants chopstick right");
-            synchronized(right) {                    // Grab right chopstick 
+            synchronized(right) {                    //Philosopher grabs the right chopstick 
               System.out.println("Philosopher " + id + " has chopstick right");
               System.out.println("Philosopher " + id + " wants chopstick left");
               synchronized(left) {
-                System.out.println("Philosopher " + id + " has chopstick left");                 // Grab left chopstick
+                System.out.println("Philosopher " + id + " has chopstick left");                 // Philosopher grabs the left chopstick 
                 int et = random.nextInt((eatingTime));
                 System.out.println("Philosopher " + id + " eats for " + et + " units");
-                Thread.sleep(et); // Eat for a while
+                Thread.sleep(et); //Time required for eating
               }
               System.out.println("Philosopher " + id + " releases chopstick left");
             }
             System.out.println("Philosopher " + id + " releases chopstick right");
           }
         }
-        // left Handed Philopher
+        // for a left Handed Philopher
         else if (id % 2 != 0){
           while (thinkCount < cycles) {
             ++thinkCount;
@@ -87,16 +87,16 @@ class Philosopher extends Thread {
               System.out.println("Philosopher " + id + " has thought " + thinkCount + " times");
             int tt = random.nextInt(thinkingTime);
             System.out.println("Philosopher " + id + " thinks for " + tt + " units");
-            Thread.sleep(tt);     // Think for a while
+            Thread.sleep(tt);     // Time required for thinking
             System.out.println("Philosopher " + id + " wants chopstick left");
-            synchronized(left) {                    // Grab left chopstick 
+            synchronized(left) {                    // Philosopher grabs the left chopstick 
               System.out.println("Philosopher " + id + " has chopstick left");
               System.out.println("Philosopher " + id + " wants chopstick right");
               synchronized(right) {
-                System.out.println("Philosopher " + id + " has chopstick right");                 // Grab right chopstick
+                System.out.println("Philosopher " + id + " has chopstick right");                 // Philosopher grabs the right chopstick 
                 int et = random.nextInt((eatingTime));
                 System.out.println("Philosopher " + id + " eats for " + et + " units");
-                Thread.sleep(et); // Eat for a while
+                Thread.sleep(et); // Time required for eating
               }
               System.out.println("Philosopher " + id + " releases chopstick right");
             }
