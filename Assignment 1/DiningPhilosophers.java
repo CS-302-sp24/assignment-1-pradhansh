@@ -9,14 +9,14 @@ public class DiningPhilosophers {
     Philosopher[] philosophers = new Philosopher[np];
     Chopstick[] chopsticks = new Chopstick[np];
 
-    System.out.println("shreya");
-    for (int i = 0; i < 5; ++i)
+    
+    for (int i = 0; i < np; ++i)
       chopsticks[i] = new Chopstick(i);
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < np; ++i) {
       philosophers[i] = new Philosopher(chopsticks[i], chopsticks[(i + 1) % np], tt,et,nc,i,rl);
       philosophers[i].start();
     }
-    for (int i = 0; i < 5; ++i)
+    for (int i = 0; i < np; ++i)
       philosophers[i].join();
   }
 }
