@@ -9,7 +9,7 @@ public class DiningPhilosophers {
     Philosopher[] philosophers = new Philosopher[np];
     Chopstick[] chopsticks = new Chopstick[np];
 
-
+    System.out.println("shreya");
     for (int i = 0; i < 5; ++i)
       chopsticks[i] = new Chopstick(i);
     for (int i = 0; i < 5; ++i) {
@@ -20,4 +20,5 @@ public class DiningPhilosophers {
       philosophers[i].join();
   }
 }
+
 
