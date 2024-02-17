@@ -1,0 +1,14 @@
+ TRACES WITH VARIOUS ARGUMENTS:
+ 
+ java DiningPhilosophers 2 1 1 1 0 
+
+Philosopher 0 thinks for 0 units
+Philosopher 1 thinks for 0 units
+Philosopher 1 wants chopstick right
+Philosopher 0 wants chopstick right
+Philosopher 0 has chopstick right
+Philosopher 1 has chopstick right
+Philosopher 1 wants chopstick left
+Philosopher 0 wants chopstick left
+
+This creates a deadlock 
