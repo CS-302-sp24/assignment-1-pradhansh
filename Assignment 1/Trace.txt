@@ -11,4 +11,144 @@ Philosopher 1 has chopstick right
 Philosopher 1 wants chopstick left
 Philosopher 0 wants chopstick left
 
-This creates a deadlock 
+
+
+java DiningPhilosophers 5 1 1 1 1                                         
+Philosopher 4 thinks for 0 units
+Philosopher 0 thinks for 0 units
+Philosopher 3 thinks for 0 units
+Philosopher 1 thinks for 0 units
+Philosopher 2 thinks for 0 units
+Philosopher 0 wants chopstick right
+Philosopher 3 wants chopstick left
+Philosopher 0 has chopstick right
+Philosopher 1 wants chopstick left
+Philosopher 0 wants chopstick left
+Philosopher 4 wants chopstick right
+Philosopher 2 wants chopstick right
+Philosopher 0 has chopstick left
+Philosopher 3 has chopstick left
+Philosopher 3 wants chopstick right
+Philosopher 0 eats for 0 units
+Philosopher 4 has chopstick right
+Philosopher 4 wants chopstick left
+Philosopher 3 has chopstick right
+Philosopher 0 releases chopstick left
+Philosopher 3 eats for 0 units
+Philosopher 1 has chopstick left
+Philosopher 1 wants chopstick right
+Philosopher 1 has chopstick right
+Philosopher 1 eats for 0 units
+Philosopher 4 has chopstick left
+Philosopher 0 releases chopstick right
+Philosopher 4 eats for 0 units
+Philosopher 1 releases chopstick right
+Philosopher 3 releases chopstick right
+Philosopher 4 releases chopstick left
+Philosopher 4 releases chopstick right
+Philosopher 3 releases chopstick left
+Philosopher 1 releases chopstick left
+Philosopher 2 has chopstick right
+Philosopher 2 wants chopstick left
+Philosopher 2 has chopstick left
+Philosopher 2 eats for 0 units
+Philosopher 2 releases chopstick left
+Philosopher 2 releases chopstick right
+
+java DiningPhilosophers 3 4 7 8 5   
+Philosopher 1 thinks for 5 units
+Philosopher 2 thinks for 4 units
+Philosopher 0 thinks for 4 units
+Philosopher 2 wants chopstick right
+Philosopher 0 wants chopstick right
+Philosopher 2 has chopstick right
+Philosopher 1 wants chopstick left
+Philosopher 2 wants chopstick left
+Philosopher 0 has chopstick right
+Philosopher 2 has chopstick left
+Philosopher 0 wants chopstick left
+Philosopher 2 eats for 2 units
+Philosopher 2 releases chopstick left
+Philosopher 0 has chopstick left
+Philosopher 2 releases chopstick right
+Philosopher 0 eats for 6 units
+Philosopher 2 thinks for 5 units
+Philosopher 0 releases chopstick left
+Philosopher 0 releases chopstick right
+Philosopher 2 wants chopstick right
+Philosopher 1 has chopstick left
+Philosopher 0 thinks for 2 units
+Philosopher 1 wants chopstick right
+Philosopher 2 has chopstick right
+Philosopher 1 has chopstick right
+Philosopher 2 wants chopstick left
+Philosopher 1 eats for 3 units
+Philosopher 0 wants chopstick right
+Philosopher 2 has chopstick left
+Philosopher 2 eats for 4 units
+Philosopher 1 releases chopstick right
+Philosopher 0 has chopstick right
+Philosopher 1 releases chopstick left
+Philosopher 0 wants chopstick left
+Philosopher 1 thinks for 4 units
+Philosopher 2 releases chopstick left
+Philosopher 2 releases chopstick right
+Philosopher 1 wants chopstick left
+Philosopher 0 has chopstick left
+Philosopher 2 thinks for 6 units
+Philosopher 0 eats for 6 units
+Philosopher 2 wants chopstick right
+Philosopher 0 releases chopstick left
+Philosopher 2 has chopstick right
+Philosopher 1 has chopstick left
+Philosopher 0 releases chopstick right
+Philosopher 1 wants chopstick right
+Philosopher 1 has chopstick right
+Philosopher 1 eats for 0 units
+Philosopher 2 wants chopstick left
+Philosopher 1 releases chopstick right
+Philosopher 1 releases chopstick left
+Philosopher 0 thinks for 2 units
+Philosopher 1 thinks for 4 units
+Philosopher 2 has chopstick left
+Philosopher 2 eats for 6 units
+Philosopher 0 wants chopstick right
+Philosopher 0 has chopstick right
+Philosopher 0 wants chopstick left
+Philosopher 1 wants chopstick left
+Philosopher 2 releases chopstick left
+Philosopher 2 releases chopstick right
+Philosopher 0 has chopstick left
+Philosopher 2 thinks for 6 units
+Philosopher 0 eats for 0 units
+Philosopher 0 releases chopstick left
+Philosopher 0 releases chopstick right
+Philosopher 1 has chopstick left
+Philosopher 1 wants chopstick right
+Philosopher 1 has chopstick right
+Philosopher 0 thinks for 1 units
+Philosopher 1 eats for 6 units
+Philosopher 0 wants chopstick right
+Philosopher 2 wants chopstick right
+Philosopher 2 has chopstick right
+Philosopher 2 wants chopstick left
+Philosopher 1 releases chopstick right
+Philosopher 2 has chopstick left
+Philosopher 0 has chopstick right
+Philosopher 1 releases chopstick left
+Philosopher 1 thinks for 0 units
+Philosopher 0 wants chopstick left
+Philosopher 2 eats for 3 units
+Philosopher 1 wants chopstick left
+Philosopher 2 releases chopstick left
+Philosopher 2 releases chopstick right
+Philosopher 0 has chopstick left
+Philosopher 0 eats for 4 units
+Philosopher 0 releases chopstick left
+Philosopher 0 releases chopstick right
+Philosopher 1 has chopstick left
+Philosopher 1 wants chopstick right
+Philosopher 1 has chopstick right
+Philosopher 1 eats for 1 units
+Philosopher 1 releases chopstick right
+Philosopher 1 releases chopstick left
